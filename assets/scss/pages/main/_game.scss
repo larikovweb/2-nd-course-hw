@@ -1,0 +1,50 @@
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: rem(800);
+  &__content {
+    max-width: rem(584);
+    > *:not(:last-child) {
+      margin-bottom: rem(32);
+    }
+  }
+  &_center {
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      > *:not(:last-child) {
+        margin-bottom: rem(32);
+      }
+    }
+  }
+  &__img {
+    width: rem(485);
+    height: rem(333);
+  }
+  @media screen and (max-width: $lgPhoneWidth) {
+    height: rem(653);
+    flex-direction: column;
+    justify-content: center;
+    br {
+      display: none;
+    }
+    &_center {
+      padding-top: rem(50);
+      height: rem(800);
+      justify-content: flex-start;
+    }
+    &_reverse {
+      flex-direction: column-reverse;
+    }
+    &__img {
+      width: 100%;
+      height: auto;
+      margin-top: rem(64);
+    }
+  }
+}

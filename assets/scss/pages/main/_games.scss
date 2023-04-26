@@ -1,0 +1,29 @@
+.games {
+  padding-top: rem(128);
+  padding-bottom: rem(128);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(rem(343), 1fr));
+  gap: rem(32);
+  &__item {
+    position: relative;
+    border-radius: rem(16);
+    overflow: hidden;
+    height: rem(300);
+    padding: rem(32);
+    font-weight: 600;
+    font-size: rem(24);
+    line-height: rem(32);
+    display: flex;
+    align-items: flex-end;
+    border: rem(3) solid transparent;
+    transition: border 0.3s;
+    &:hover {
+      border: rem(3) solid #44d2ff;
+    }
+  }
+  @media screen and (max-width: $lgPhoneWidth) {
+    &__item {
+      padding-left: rem(16);
+    }
+  }
+}

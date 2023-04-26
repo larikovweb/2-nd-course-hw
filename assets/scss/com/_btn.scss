@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+  width: rem(234);
+  height: rem(48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9c0332;
+  border-radius: rem(30);
+  font-weight: 400;
+  font-size: rem(18);
+  line-height: rem(22);
+  color: #fff;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #eb443f;
+  }
+  @media screen and (max-width: $lgPhoneWidth) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

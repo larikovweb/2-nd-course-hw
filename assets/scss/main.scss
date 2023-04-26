@@ -1,0 +1,66 @@
+// var, mixins
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// CSS-libs
+@import "vendor/libs";
+
+// main styles
+@import "base/fonts";
+@import "base/general";
+@import "base/animations";
+
+//layout
+@import "layout/header";
+@import "layout/footer";
+
+//components
+@import "com/btn";
+@import "com/cover";
+
+//sections
+@import "pages/main/welcome";
+@import "pages/main/games";
+@import "pages/main/game";
+
+h1 {
+  font-weight: 700;
+  font-size: rem(64);
+  line-height: rem(78);
+}
+
+h2,
+h3 {
+  font-weight: 700;
+  font-size: rem(48);
+  line-height: rem(59);
+}
+
+p {
+  font-weight: 300;
+  font-size: rem(18);
+  line-height: rem(32);
+  b {
+    font-weight: 700;
+  }
+}
+
+section {
+  position: relative;
+}
+
+@media screen and (max-width: $lgPhoneWidth) {
+  h1,
+  h2,
+  h3 {
+    font-size: rem(32);
+    line-height: rem(39);
+    text-align: center;
+  }
+
+  p {
+    font-size: rem(14);
+    line-height: rem(22);
+    text-align: center;
+  }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Мой сайт</title>
+    <meta
+      name="description"
+      content="Вам предстоит пройти несколько увлекательных игр."
+    />
+  </head>
+  <body>
+    <main>
+      <section class="welcome">
+        <div class="container">
+          <h1 class="welcome__title">Добро пожаловать на мой сайт !</h1>
+          <p class="welcome__descr">
+            Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+            поехали и приступай
+          </p>
+          <a href="#" class="welcome__btn button">Поехали!</a>
+        </div>
+        <picture>
+          <source
+            media="(min-width: 578px)"
+            srcset="./assets/img/sections/welcome/main-bg.webp"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 578px)"
+            srcset="./assets/img/sections/welcome/main-bg.jpg"
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 578px)"
+            srcset="./assets/img/sections/welcome/main-bg_mob.webp"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 578px)"
+            srcset="./assets/img/sections/welcome/main-bg_mob.jpg"
+            type="image/jpg"
+          />
+          <img
+            class="cover"
+            src="./aseets/img/sections/welcome/main-bg.jpg"
+            alt="Фон"
+          />
+        </picture>
+      </section>
+      <section class="games container">
+        <a href="#" class="games__item">
+          <picture>
+            <source
+              srcset="./assets/img/sections/games/img-1.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/img/sections/games/img-1.jpg"
+              type="image/jpg"
+            />
+            <img
+              class="cover"
+              src="./img/games/sections/img-1.jpg"
+              alt="Игра 1"
+            />
+          </picture>
+          <span>Игра 1</span>
+        </a>
+        <a href="#" class="games__item">
+          <picture>
+            <source
+              srcset="./assets/img/sections/games/img-2.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/img/sections/games/img-2.jpg"
+              type="image/jpg"
+            />
+            <img
+              class="cover"
+              src="./img/sections/games/img-2.jpg"
+              alt="Игра 2"
+            />
+          </picture>
+          <span>Игра 2</span>
+        </a>
+        <a href="#" class="games__item">
+          <picture>
+            <source
+              srcset="./assets/img/sections/games/img-3.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/img/sections/games/img-3.jpg"
+              type="image/jpg"
+            />
+            <img
+              class="cover"
+              src="./img/sections/games/img-3.jpg"
+              alt="Игра 3"
+            />
+          </picture>
+          <span>Игра 3</span>
+        </a>
+      </section>
+      <section class="game container">
+        <div class="game__content">
+          <h2 class="game__title">Времена года</h2>
+          <p class="game__descr">
+            Вам предстоит пройти несколько увлекательных игр. <br />
+            Если готов нажимай <b>поехали</b> и <b>приступай</b>
+          </p>
+          <a
+            href="#"
+            class="game__btn button"
+            onclick="calcSeasons(event, +prompt('Введите номер месяца', ''))"
+          >
+            Поехали!
+          </a>
+        </div>
+        <img
+          class="game__img"
+          src="./assets/img/sections/games/one/preview-img.svg"
+          alt="Времена года"
+        />
+      </section>
+      <section class="game game_reverse container">
+        <img
+          class="game__img"
+          src="./assets/img/sections/games/two/preview-img.svg"
+          alt="Запомни слова"
+        />
+        <div class="game__content">
+          <h2 class="game__title">Запомни слова</h2>
+          <p class="game__descr">
+            При нажатии на кнопку играть, вы увидите несколько слов, <br />
+            которые вам необходимо запомнить.
+          </p>
+          <a href="#" class="game__btn button" onclick="questionsForUser(event)"
+            >Играть</a
+          >
+        </div>
+      </section>
+      <section class="game game_center">
+        <div class="container">
+          <h2 class="game__title">Игра в загадки</h2>
+          <p class="game__descr">
+            Компьютер загадывает загадку, вам необходимо ее угадать, если вы
+            дадите не правильный ответ, то компьютер даст вам подсказку. У вас
+            будет три попытки и две подсказки.
+          </p>
+          <a href="#" class="game__btn button">Играть!</a>
+        </div>
+        <picture>
+          <source
+            media="(min-width: 578px)"
+            srcset="./assets/img/sections/games/three/preview-bg.webp"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 578px)"
+            srcset="./assets/img/sections/games/three/preview-bg.jpg"
+            type="image/jpg"
+          />
+          <source
+            media="(max-width: 578px)"
+            srcset="./assets/img/sections/games/three/preview-bg_mob.webp"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 578px)"
+            srcset="./assets/img/sections/games/three/preview-bg_mob.jpg"
+            type="image/jpg"
+          />
+          <img
+            class="cover"
+            src="./img/sections/games/three/preview-bg.jpg"
+            alt="Фон"
+          />
+        </picture>
+      </section>
+    </main>
+    <footer class="footer">Все права защищены</footer>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
